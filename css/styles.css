@@ -1,0 +1,99 @@
+/* CSS Document */
+html, body {
+  height: 100%;
+}
+
+
+/*--- App ---*/
+.app {
+  padding-bottom: 50px;
+}
+
+
+/*--- Controls ---*/
+.controls {
+  text-align: center;
+}
+.controls .f-place {
+  display: inline-block;
+}
+.controls-actions {
+  display: inline-block;
+  margin: 0 0 0 2em;
+}
+
+
+/*--- F-place ---*/
+.f-place {
+  text-align: left;
+}
+.f-place input[type="number"] {
+  width: 60px;
+}
+.f-place select {
+  width: 70px;
+}
+
+
+/*--- Footer ---*/
+.footer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+
+
+/*--- Tabletop ---*/
+.tabletop {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+.tabletop li {
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+  float: left;
+  font-weight: bold;
+  height: 40px;
+  text-align: center;
+  width: 40px;
+}
+.tabletop li:first-child {
+  border-left: 1px solid #000;
+}
+.tabletop-nl {
+  border-left: 1px solid #000;
+  clear: left;
+}
+.tabletop-robot {
+  background: #0f0;
+}
+.tabletop-tc {
+  border-top: 1px solid #000;
+}
+
+
+/*--- W-side ---*/
+.w-side {
+  color: #00f;
+  font-weight: bold;
+  margin: 10px;
+}
+.w-side-hor {
+  display: inline-block;
+  margin: 0;
+  vertical-align: middle;
+}
+
+
+/*--- Wrapper ---*/
+.wrapper {
+  min-height: 100%;
+  padding: 0 0 50px;
+  position: relative;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toy Robot</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+  <!--[if lte IE 7]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css"/>
+  <![endif]-->
+
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container app">
+      <header class="header row">
+        <div class="col-xs-12">
+          <h1 class="text-center">Toy Robot</h1>
+        </div>
+      </header>
+
+      <div class="row">
+        <div class="col-xs-8 col-xs-offset-2 text-center">
+          <p class="w-side">North</p>
+          <p class="w-side w-side-hor">West</p>
+          <ul class="tabletop clearfix" id="js-tabletop"></ul>
+          <p class="w-side w-side-hor">East</p>
+          <p class="w-side">South</p>
+        </div>
+      </div>
+
+      <div class="row controls">
+        <div class="col-xs-10 col-xs-offset-1">
+          <!-- Place the robot -->
+          <form class="form-inline f-place">
+            <div class="form-group">
+              <input type="number" class="form-control" name="robotPlaceX" placeholder="X" required>
+            </div>
+
+            <div class="form-group">
+              <input type="number" class="form-control" name="robotPlaceY" placeholder="Y" required>
+            </div>
+
+            <select class="form-control" name="robotPlaceFacing" required>
+              <!--option value="North">North</option>
+              <option value="East">East</option>
+              <option value="South">South</option>
+              <option value="West">West</option-->
+            </select>
+
+            <button type="submit" class="btn btn-success">Place</button>
+          </form><!-- /Place the robot -->
+
+          <!-- Move, Left, Right, Report -->
+          <div class="controls-actions">
+            <span class="btn btn-primary js-controls-actions-move">Move</span>
+            <span class="btn btn-info js-controls-actions-left">Left</span>
+            <span class="btn btn-info js-controls-actions-right">Right</span>
+            <span class="btn btn-warning js-controls-actions-report">Report</span>
+          </div>
+          <!-- /Move, Left, Right, Report -->
+        </div><!-- /controls -->
+      </div>
+    </div><!-- App -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <p>Copyright &copy; 2015. Toy Robot</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div><!-- Wrapper -->
+
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.placeholder.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
